@@ -1,0 +1,1 @@
+Environment is broken: when agent successfully kills all zombies then unexpected things happens
