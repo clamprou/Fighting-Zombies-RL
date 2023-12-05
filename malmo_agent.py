@@ -44,6 +44,7 @@ class Agent:
         self.unresponsive_count = UNRESPONSIVE_AGENT
         self.all_zombies_died = False
         self.actions = ["attack 1", "move 1", "move -1", "strafe 1", "strafe -1", "turn 0.3", "turn -0.3"]
+        self.actions_view = ["Attack", "Go_Front", "Go_Back", "Go_Right", "Go_Left", "Look_Right", "Look_Left"]
         self.rewards = []
         self.kills = []
         self.prev_kills = 0
@@ -101,7 +102,6 @@ class Agent:
         if world_state.number_of_rewards_since_last_state > 0:
             for rew in world_state.rewards:
                 self.tick_reward += rew.getValue()
-                print("Reward: +", self.tick_reward)
 
         # If Agent is steel alive we observe the changes on the environment and calculate our own rewards
         if world_state.number_of_observations_since_last_state > 0:
@@ -125,7 +125,6 @@ class Agent:
             cur_zombies_alive = list(d.get('name') == 'Zombie' for d in ob["entities"]).count(True)
             if cur_zombies_alive - self.zombies_alive != 0:
                 self.tick_reward += 100
-                print("Reward: +100")
             self.zombies_alive = cur_zombies_alive
             self.zombie_los_in_range = 0
             self.zombie_los = 0
@@ -149,10 +148,10 @@ class Agent:
             if "XPos" in ob and "ZPos" in ob:
                 self.current_pos = [round(ob[u'XPos']), round(ob[u'ZPos'])]
         elif world_state.number_of_observations_since_last_state == 0:
+            self.tick_reward -= 0.1
             self.unresponsive_count -= 1
         if self.unresponsive_count <= 0 and not self.all_zombies_died:  # Agent died but we are here one tick before episode ends, so we punish him
             self.tick_reward -= 100
-            print("Reward: -100")
         self.state = [self.zombie_los_in_range, self.zombie_los, self.current_pos[0]
             , self.current_pos[1], self.current_life, self.yaw, self.zombie_yaw[0], self.zombie_yaw[1], self.zombie_yaw[2]
             , self.zombies_pos[0][0], self.zombies_pos[0][1], self.zombies_pos[1][0], self.zombies_pos[1][1],
@@ -169,22 +168,14 @@ class Agent:
         else:
             self.kills.append(0)
         self.rewards.append(self.episode_reward)
-        print()
         self.malmo_agent.sendCommand("quit")
-        if self.all_zombies_died:
-            print("All Zombies Died")
-        elif self.unresponsive_count <= 0:
-            print("Agent Died")
-        print("Waiting for mission to end ", end=' ')
         hasEnded = False
         while not hasEnded:
             hasEnded = True  # assume all good
-            print(".", end="")
             time.sleep(0.1)
             world_state = self.malmo_agent.getWorldState()
             if world_state.is_mission_running:
                 hasEnded = False  # all not good
-        self.print_finish_data()
         self.episode_reward = 0
         self.zombies_alive = NUM_MOBS
         self.reset_state()
@@ -224,7 +215,6 @@ class Agent:
                     if len(ob["entities"]) == NUM_MOBS + NUM_AGENTS:
                         break
             if unresponsive_count <= 0:
-                print("Quit!")
                 self.malmo_agent.sendCommand("quit")
                 time.sleep(3)
                 self.start_episode()
@@ -234,7 +224,6 @@ class Agent:
     def __safe_start_mission(self, mission, mission_record, role, expId):
         used_attempts = 0
         max_attempts = 5
-        print("Calling startMission for role", role)
         while True:
             try:
                 # Attempt start:
@@ -243,31 +232,21 @@ class Agent:
             except MalmoPython.MissionException as e:
                 errorCode = e.details.errorCode
                 if errorCode == MalmoPython.MissionErrorCode.MISSION_SERVER_WARMING_UP:
-                    print("Server not quite ready yet - waiting...")
                     time.sleep(2)
                 elif errorCode == MalmoPython.MissionErrorCode.MISSION_INSUFFICIENT_CLIENTS_AVAILABLE:
-                    print("Not enough available Minecraft instances running.")
                     used_attempts += 1
                     if used_attempts < max_attempts:
-                        print("Will wait in case they are starting up.", max_attempts - used_attempts, "attempts left.")
                         time.sleep(2)
                 elif errorCode == MalmoPython.MissionErrorCode.MISSION_SERVER_NOT_FOUND:
-                    print("Server not found - has the mission with role 0 been started yet?")
                     used_attempts += 1
                     if used_attempts < max_attempts:
-                        print("Will wait and retry.", max_attempts - used_attempts, "attempts left.")
                         time.sleep(2)
                 else:
-                    print("Other error:", e)
-                    print("Waiting will not help here - bailing immediately.")
                     exit(1)
             if used_attempts == max_attempts:
-                print("All chances used up - bailing now.")
                 exit(1)
-        print("startMission called okay.")
 
     def __safe_wait_for_start(self):
-        print("Waiting for the mission to start", end=' ')
         start_flag = False
         start_time = time.time()
         time_out = 120  # Allow a two minute timeout.
@@ -276,18 +255,12 @@ class Agent:
             start_flag = state.has_mission_begun
             errors = [e for e in state.errors]
             if len(errors) > 0:
-                print("Errors waiting for mission start:")
-                for e in errors:
-                    print(e.text)
-                print("Bailing now.")
+                # for e in errors:
+                #     # print(e.text)
                 exit(1)
             time.sleep(0.1)
-            print(".", end=' ')
         if time.time() - start_time >= time_out:
-            print("Timed out while waiting for mission to start - bailing.")
             exit(1)
-        print()
-        print("Mission has started.")
 
 
     def __spawn_zombies(self):

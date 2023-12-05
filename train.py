@@ -12,7 +12,6 @@ env = FightingZombiesDisc()
 
 for episode in range(NUM_EPISODES):
     state, done = env.reset(), False
-    print("Running mission #" + str(episode))
     t = 0
     state = torch.tensor(state, dtype=torch.float32, device=device).unsqueeze(0)
     while not done:
@@ -29,9 +28,13 @@ for episode in range(NUM_EPISODES):
             target_net_state_dict[key] = policy_net_state_dict[key]*TAU + target_net_state_dict[key]*(1-TAU)
         target_net.load_state_dict(target_net_state_dict)
         t += 1
+    if(episode > 100):
+        values = torch.tensor(env.agent.rewards, dtype=torch.float)
+        means = values.unfold(0, 100, 1).mean(1).view(-1)
+        means = torch.cat((torch.zeros(99), means))
+        print("| Episode: ", episode," | Average reward: ",means.numpy()[-1], "| Episode reward: ",env.agent.episode_reward, "|")
     if (episode + 1) % 100 == 0:
         plot_table(env.agent.rewards, "rewards")
-        print("Memory length:", len(memory))
 
 
 print('Complete')
