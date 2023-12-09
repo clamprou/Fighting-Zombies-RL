@@ -17,7 +17,7 @@ MS_PER_TICK = 10
 NUM_AGENTS = 1
 NUM_MOBS = 3
 UNRESPONSIVE_AGENT = 100 / MS_PER_TICK
-UNRESPONSIVE_ZOMBIES = 500 / MS_PER_TICK
+UNRESPONSIVE_ZOMBIES = 1100 / MS_PER_TICK
 
 
 
@@ -36,6 +36,7 @@ class Agent:
         self.client_pool = MalmoPython.ClientPool()
         self.client_pool.add(MalmoPython.ClientInfo('127.0.0.1', 10000 + agents-1))
         self.running = True
+        self.zombies_ids = []
         self.current_life = 20
         self.current_pos = [0, 0]
         self.yaw = 0
@@ -61,6 +62,7 @@ class Agent:
         experimentID = str(uuid.uuid4())
         self.__safe_start_mission(self.mission, MalmoPython.MissionRecordSpec(), 0, experimentID)
         self.__safe_wait_for_start()
+        self.__spawn_zombies()
         self.__safe_wait_for_zombies()
         time.sleep(MS_PER_TICK * 0.002)
         self.malmo_agent.sendCommand("chat /gamerule naturalRegeneration false")
@@ -68,7 +70,7 @@ class Agent:
         self.malmo_agent.sendCommand("chat /difficulty 1")
         if self.all_zombies_died:
             self.malmo_agent.sendCommand("chat /effect Robot instant_health 20")
-            self.malmo_agent.sendCommand("chat /effect Robot minecraft:absorption 999999 1")
+            # self.malmo_agent.sendCommand("chat /effect Robot minecraft:absorption 999999 1")
         self.unresponsive_count = UNRESPONSIVE_AGENT
         self.all_zombies_died = False
         time.sleep(MS_PER_TICK * 0.001)
@@ -117,9 +119,11 @@ class Agent:
                 k = 0
                 for d in ob["entities"]:
                     if d.get('name') == 'Zombie':
-                        self.zombies_pos[k] = [round(d.get('x')), round(d.get('z'))]
-                        self.zombie_yaw[k] = d.get('yaw') % 360
-                        k += 1
+                        if d.get('id') in self.zombies_ids:
+                            k += 1
+                            idx = self.zombies_ids.index(d.get('id'))
+                            self.zombies_pos[idx] = [round(d.get('x')), round(d.get('z'))]
+                            self.zombie_yaw[idx] = d.get('yaw') % 360
 
             # Observe environment
             cur_zombies_alive = list(d.get('name') == 'Zombie' for d in ob["entities"]).count(True)
@@ -207,12 +211,16 @@ class Agent:
 
     def __safe_wait_for_zombies(self):
         unresponsive_count = UNRESPONSIVE_ZOMBIES
+        self.zombies_ids = []
         while True:
             world_state = self.malmo_agent.getWorldState()
             if len(world_state.observations) != 0:
                 ob = json.loads(world_state.observations[-1].text)
                 if any(d.get('name') == 'Zombie' for d in ob["entities"]):
                     if len(ob["entities"]) == NUM_MOBS + NUM_AGENTS:
+                        for d in ob["entities"]:
+                            if d.get('name') == 'Zombie':
+                                self.zombies_ids.append(d.get('id'))
                         break
             if unresponsive_count <= 0:
                 self.malmo_agent.sendCommand("quit")
@@ -220,6 +228,13 @@ class Agent:
                 self.start_episode()
             unresponsive_count -= 1
             time.sleep(MS_PER_TICK * 0.001)
+
+    def get_zombies_ids(self):
+        world_state = self.malmo_agent.getWorldState()
+        ob = json.loads(world_state.observations[-1].text)
+        for d in ob["entities"]:
+            if d.get('name') == 'Zombie':
+                self.zombies_ids.append(d.get('id'))
 
     def __safe_start_mission(self, mission, mission_record, role, expId):
         used_attempts = 0
@@ -267,18 +282,18 @@ class Agent:
         for _ in range(NUM_MOBS):
             self.malmo_agent.sendCommand(
                 "chat /summon Zombie "
-                + str(random.randint(-15, 15))
-                + " 202 "
-                + str(random.randint(-15, 15))
+                + str(random.randint(-10, 10))
+                + " 185 "
+                + str(random.randint(-10, 10))
                 + " {HealF:10.0f}"
             )
 
     def drawMobs(self):
         xml = ""
         for i in range(NUM_MOBS):
-            x = str(random.randint(-15,15))
-            z = str(random.randint(-15,15))
-            xml += '<DrawEntity x="' + x + '" y="202" z="' + z + '" type="Zombie"/>'
+            x = str(random.randint(-10,10))
+            z = str(random.randint(-10,10))
+            xml += '<DrawEntity x="' + x + '" y="179" z="' + z + '" type="Zombie"/>'
         return xml
 
     def __get_xml(self, reset):
@@ -299,11 +314,8 @@ class Agent:
             <ServerHandlers>
               <FlatWorldGenerator forceReset="''' + reset + '''" generatorString="" seed=""/>
               <DrawingDecorator>
-                <DrawCuboid x1="-19" y1="200" z1="-19" x2="19" y2="235" z2="19" type="wool" colour="ORANGE"/>
-                <DrawCuboid x1="-18" y1="202" z1="-18" x2="18" y2="247" z2="18" type="air"/>
-                ''' + self.drawMobs() + '''
-                <DrawBlock x="0" y="226" z="0" type="fence"/>
-                <DrawCuboid x1="-19" y1="235" z1="-19" x2="19" y2="255" z2="19" type="wool" colour="ORANGE"/>
+                <DrawSphere x="0" y="202" z="0" radius="25" type="stone"/>
+                <DrawSphere x="0" y="202" z="0" radius="24" type="air"/>
               </DrawingDecorator>
             </ServerHandlers>
           </ServerSection>
@@ -312,13 +324,13 @@ class Agent:
             xml += '''<AgentSection mode="Adventure">
             <Name>Robot</Name>
             <AgentStart>
-              <Placement x="''' + str(0) + '''" y="202" z="''' + str(0) + '''"/>
+              <Placement x="''' + str(0) + '''" y="179" z="''' + str(0) + '''"/>
               <Inventory>
                 <InventoryBlock quantity="1" slot="0" type="diamond_sword" />
-                <InventoryBlock quantity="1" slot="39" type="iron_helmet" />
-                <InventoryBlock quantity="1" slot="38" type="iron_chestplate" />
-                <InventoryBlock quantity="1" slot="37" type="iron_leggings" />
-                <InventoryBlock quantity="1" slot="36" type="iron_boots" />
+                <InventoryBlock quantity="1" slot="39" type="diamond_helmet" />
+                <InventoryBlock quantity="1" slot="38" type="diamond_chestplate" />
+                <InventoryBlock quantity="1" slot="37" type="diamond_leggings" />
+                <InventoryBlock quantity="1" slot="36" type="diamond_boots" />
               </Inventory>
             </AgentStart>
             <AgentHandlers>
@@ -329,7 +341,7 @@ class Agent:
                     <Mob reward="30" type="Zombie"/>
                 </RewardForDamagingEntity>
               <ObservationFromNearbyEntities>
-                <Range name="entities" xrange="40" yrange="2" zrange="40"/>
+                <Range name="entities" xrange="100" yrange="100" zrange="100"/>
               </ObservationFromNearbyEntities>
               <ObservationFromRay/>
               <ObservationFromFullStats/>

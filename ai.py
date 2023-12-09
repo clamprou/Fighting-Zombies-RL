@@ -8,6 +8,10 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 
+from gym_env import FightingZombiesDisc
+
+env = FightingZombiesDisc()
+
 
 # set up matplotlib
 is_ipython = 'inline' in matplotlib.get_backend()
@@ -43,18 +47,16 @@ class DQN(nn.Module):
 
     def __init__(self, n_observations, n_actions):
         super(DQN, self).__init__()
-        self.fc1 = nn.Linear(n_observations, 512)
-        self.fc2 = nn.Linear(512, 256)
-        self.fc3 = nn.Linear(256, 128)
-        self.fc4 = nn.Linear(128, n_actions)
+        self.layer1 = nn.Linear(n_observations, 256)
+        self.layer2 = nn.Linear(256, 256)
+        self.layer3 = nn.Linear(256, n_actions)
 
     # Called with either one element to determine next action, or a batch
     # during optimization. Returns tensor([[left0exp,right0exp]...]).
     def forward(self, x):
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        x = F.relu(self.fc3(x))
-        return self.fc4(x)
+        x = F.relu(self.layer1(x))
+        x = F.relu(self.layer2(x))
+        return self.layer3(x)
 
 # BATCH_SIZE is the number of transitions sampled from the replay buffer
 # GAMMA is the discount factor as mentioned in the previous section
@@ -69,12 +71,12 @@ EPS_START = 0.9
 EPS_END = 0.05
 EPS_DECAY = 1200
 TAU = 0.005
-LR = 1e-3
+LR = 1e-2
 
 # Get number of actions from gym action space
-n_actions = 7
+n_actions = env.action_space.n
 # Get the number of state observations
-n_observations = 15
+n_observations = env.observation_space_n
 
 policy_net = DQN(n_observations, n_actions).to(device)
 target_net = DQN(n_observations, n_actions).to(device)
@@ -101,7 +103,7 @@ def select_action(state):
             # found, so we pick action with the larger expected reward.
             return policy_net(state).max(1)[1].view(1, 1)
     else:
-        return torch.tensor([[random.randint(0, 6)]], device=device, dtype=torch.long)
+        return torch.tensor([[random.randint(0, 8)]], device=device, dtype=torch.long)
 
 
 episode_durations = []

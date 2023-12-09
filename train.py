@@ -1,14 +1,12 @@
 from __future__ import print_function
 from __future__ import division
-from malmo_agent import *
+from malmo_agent_circle import *
 from ai import *
-from gym_env import FightingZombiesDisc
 print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 print("Hyper Parameters:\nBATCH_SIZE: " + str(BATCH_SIZE) +"\nGAMMA: "+ str(GAMMA) +"\nEPS_START: "+ str(EPS_START)
       +"\nEPS_END: "+ str(EPS_END) +"\nEPS_DECAY: "+ str(EPS_DECAY) +"\nTAU: "+ str(TAU) +"\nLR: "+ str(LR))
 
 NUM_EPISODES = 2000
-env = FightingZombiesDisc()
 
 for episode in range(NUM_EPISODES):
     state, done = env.reset(), False
@@ -33,6 +31,8 @@ for episode in range(NUM_EPISODES):
         means = values.unfold(0, 100, 1).mean(1).view(-1)
         means = torch.cat((torch.zeros(99), means))
         print("| Episode: ", episode," | Average reward: ",means.numpy()[-1], "| Episode reward: ",env.agent.episode_reward, "|")
+    else:
+        print("| Episode: ", episode, "| Episode reward: ",env.agent.episode_reward, "|")
     if (episode + 1) % 100 == 0:
         plot_table(env.agent.rewards, "rewards")
 

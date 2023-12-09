@@ -2,7 +2,7 @@ import math
 import gym
 from gym import spaces
 import numpy as np
-from malmo_agent import Agent
+from malmo_agent_circle import Agent
 
 
 class FightingZombiesDisc(gym.Env):
