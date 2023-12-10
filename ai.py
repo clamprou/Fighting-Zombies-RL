@@ -99,7 +99,7 @@ def select_action(state):
             # found, so we pick action with the larger expected reward.
             return policy_net(state).max(1)[1].view(1, 1)
     else:
-        print("Explore")
+        # print("Explore")
         return torch.tensor([[random.randint(0, 6)]], device=device, dtype=torch.long)
 
 
