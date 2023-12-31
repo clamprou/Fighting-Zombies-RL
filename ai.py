@@ -84,6 +84,15 @@ memory = ReplayMemory(100000)
 
 steps_done = 0
 
+def save_model():
+    torch.save(policy_net.state_dict(), "policy.pt")
+    print("Saved!")
+
+def load_model():
+    policy_net.load_state_dict(torch.load("policy.pt"))
+    policy_net.eval()
+    target_net.load_state_dict(torch.load("target.pt"))
+    target_net.eval()
 
 def select_action(state):
     global steps_done

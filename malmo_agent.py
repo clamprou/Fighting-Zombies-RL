@@ -12,6 +12,8 @@ import matplotlib
 import torch
 from matplotlib import pyplot as plt
 
+import ai
+
 MS_PER_TICK = 10
 
 NUM_AGENTS = 1
@@ -23,6 +25,7 @@ UNRESPONSIVE_ZOMBIES = 500 / MS_PER_TICK
 
 class Agent:
     def __init__(self, agents=1):
+        self.max_average = 0
         self.first_time = True
         self.episode_reward = 0  # Rewards per tick
         self.tick_reward = 0  # Rewards per episode
@@ -385,6 +388,24 @@ class Agent:
     def sleep(self):
         time.sleep(MS_PER_TICK * 0.000001)
 
+    def save(self):
+        values = torch.tensor(self.rewards, dtype=torch.float)
+        # Take 100 episode averages and plot them too
+        if len(values) >= 100:
+            means = values.unfold(0, 100, 1).mean(1).view(-1)
+            means = torch.cat((torch.zeros(99), means))
+            if means.numpy()[-1] >= self.max_average:
+                self.max_average = means.numpy()[-1]
+                ai.save_model()
+
+    def is_alive(self):
+        if self.all_zombies_died:
+            return True
+        elif self.unresponsive_count <= 0:
+            return False
+        else:
+            return True
+
 
 is_ipython = 'inline' in matplotlib.get_backend()
 if is_ipython:
@@ -409,7 +430,7 @@ def plot_table(table , variable,show_result=False):
         means = values.unfold(0, 100, 1).mean(1).view(-1)
         means = torch.cat((torch.zeros(99), means))
         plt.plot(means.numpy(), color='orange')
-
+        print("mean: ", means.numpy()[-1])
     plt.pause(0.001)  # pause a bit so that plots are updated
     if is_ipython:
         if not show_result:
