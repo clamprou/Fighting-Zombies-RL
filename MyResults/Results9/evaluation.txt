@@ -5,7 +5,7 @@ C:\Users\chris\anaconda3\envs\marlo\lib\site-packages\numpy\.libs\libopenblas.XW
   stacklevel=1)
 Running on device: cuda
 Running on device: cuda
-2024-01-01 01:00:02
+2024-01-02 14:56:38
 Hyper Parameters:
 BATCH_SIZE: 128
 GAMMA: 0.99
@@ -16,26 +16,17 @@ TAU: 0.005
 LR: 0.001
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Waiting for the mission to start . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 Mission has started.
 Running mission #0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
 Reward: -100
 
 Agent Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 229.49999999999835
+Episode Reward: -183.40000000000003
 Player life:  0.0
-Zombie kill score:  2
+Zombie kill score:  0
 =========================================
 
 Calling startMission for role 0
@@ -46,12 +37,13 @@ Running mission #1
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -59,14 +51,14 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 528.4999999999998
-Player life:  13.0
-Zombie kill score:  5
+Episode Reward: 539.0
+Player life:  7.0
+Zombie kill score:  3
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . . .
+Waiting for the mission to start . . . . . . . .
 Mission has started.
 Running mission #2
 Reward: + 30.0
@@ -75,32 +67,33 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: +100
-Reward: + 30.0
-Reward: -100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 245.49999999999568
-Player life:  0.0
-Zombie kill score:  7
+Episode Reward: 523.5999999999999
+Player life:  14.0
+Zombie kill score:  6
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . .
+Waiting for the mission to start . . . . . .
 Mission has started.
 Running mission #3
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
 Reward: +100
-Reward: + 30.0
-Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -111,9 +104,9 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 528.6999999999999
-Player life:  13.0
-Zombie kill score:  10
+Episode Reward: 548.0
+Player life:  11.0
+Zombie kill score:  9
 =========================================
 
 Calling startMission for role 0
@@ -126,9 +119,9 @@ Running mission #4
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
 Reward: +100
-Reward: + 30.0
-Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -139,78 +132,77 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 565.5999999999999
-Player life:  20
-Zombie kill score:  13
+Episode Reward: 519.1999999999999
+Player life:  11.0
+Zombie kill score:  12
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . .
+Waiting for the mission to start . . . . . . . .
 Mission has started.
 Running mission #5
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: +100
+Reward: + 45.0
+Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 535.0
-Player life:  14.0
-Zombie kill score:  16
+Episode Reward: 540.3
+Player life:  12.0
+Zombie kill score:  15
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #6
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: + 45.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 570.1999999999997
-Player life:  18.0
-Zombie kill score:  19
+Episode Reward: 529.1999999999998
+Player life:  13.0
+Zombie kill score:  18
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #7
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -218,120 +210,126 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 593.9999999999998
-Player life:  20
-Zombie kill score:  22
+Episode Reward: 534.9
+Player life:  14.0
+Zombie kill score:  21
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #8
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 152.7999999999951
-Player life:  0.0
+Episode Reward: 527.9999999999999
+Player life:  13.0
 Zombie kill score:  24
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #9
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 229.0999999999981
-Player life:  0.0
-Zombie kill score:  26
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . .
-Mission has started.
-Running mission #10
-Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
 Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 534.4
-Player life:  14.0
-Zombie kill score:  29
+Episode Reward: 546.3000000000001
+Player life:  5.0
+Zombie kill score:  27
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . . . . .
+Waiting for the mission to start . . . . . . .
+Mission has started.
+Running mission #10
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 45.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 491.5000000000002
+Player life:  4.0
+Zombie kill score:  30
+=========================================
+
+Calling startMission for role 0
+startMission called okay.
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #11
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
+Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: +100
 Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 599.9999999999999
-Player life:  15.0
-Zombie kill score:  32
+Episode Reward: 556.4999999999999
+Player life:  19.0
+Zombie kill score:  33
 =========================================
 
 Calling startMission for role 0
-Not enough available Minecraft instances running.
-Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #12
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
@@ -339,19 +337,19 @@ Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
-Reward: -100
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 77.5000000000002
-Player life:  0.0
-Zombie kill score:  33
+Episode Reward: 522.4
+Player life:  12.0
+Zombie kill score:  36
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . . . . .
+Waiting for the mission to start . . . . .
 Mission has started.
 Running mission #13
 Reward: + 30.0
@@ -365,75 +363,61 @@ Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 548.4999999999997
-Player life:  11.0
-Zombie kill score:  36
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . . . . . . .
-Mission has started.
-Running mission #14
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: +100
-
-All Zombies Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 568.9999999999998
-Player life:  14.0
+Episode Reward: 561.6999999999999
+Player life:  20
 Zombie kill score:  39
 =========================================
 
 Calling startMission for role 0
-Not enough available Minecraft instances running.
-Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
-Running mission #15
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
+Running mission #14
 Reward: -100
 
 Agent Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 242.69999999999607
+Episode Reward: -176.89999999999998
 Player life:  0.0
-Zombie kill score:  41
+Zombie kill score:  39
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
+Mission has started.
+Running mission #15
+Reward: + 45.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 553.5999999999998
+Player life:  9.0
+Zombie kill score:  42
+=========================================
+
+Calling startMission for role 0
+startMission called okay.
+Waiting for the mission to start . . . . . . . .
 Mission has started.
 Running mission #16
 Reward: + 30.0
@@ -441,17 +425,25 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: -100
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: -27.400000000000034
-Player life:  0.0
-Zombie kill score:  41
+Episode Reward: 525.0999999999999
+Player life:  11.0
+Zombie kill score:  45
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
 Waiting for the mission to start . . . . . .
 Mission has started.
@@ -461,72 +453,31 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: +100
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: -100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 260.99999999999795
-Player life:  0.0
-Zombie kill score:  43
+Episode Reward: 559.6999999999999
+Player life:  19.0
+Zombie kill score:  48
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . .
 Mission has started.
 Running mission #18
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 175.29999999999802
-Player life:  0.0
-Zombie kill score:  45
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . .
-Mission has started.
-Running mission #19
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: -91.80000000000007
-Player life:  0.0
-Zombie kill score:  45
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . .
-Mission has started.
-Running mission #20
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
@@ -540,37 +491,8 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 525.2999999999993
-Player life:  6.0
-Zombie kill score:  48
-=========================================
-
-Calling startMission for role 0
-Not enough available Minecraft instances running.
-Will wait in case they are starting up. 4 attempts left.
-startMission called okay.
-Waiting for the mission to start . . . . . .
-Mission has started.
-Running mission #21
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-
-All Zombies Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 537.1
-Player life:  8.0
+Episode Reward: 563.1999999999999
+Player life:  14.0
 Zombie kill score:  51
 =========================================
 
@@ -578,14 +500,14 @@ Calling startMission for role 0
 startMission called okay.
 Waiting for the mission to start . . . . . . .
 Mission has started.
-Running mission #22
+Running mission #19
+Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
@@ -595,8 +517,8 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 564.8999999999999
-Player life:  20
+Episode Reward: 538.5999999999999
+Player life:  15.0
 Zombie kill score:  54
 =========================================
 
@@ -606,8 +528,7 @@ Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
 Waiting for the mission to start . . . . . .
 Mission has started.
-Running mission #23
-Reward: + 30.0
+Running mission #20
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
@@ -615,6 +536,7 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
@@ -623,34 +545,34 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 565.4
-Player life:  20
+Episode Reward: 518.0999999999999
+Player life:  10.0
 Zombie kill score:  57
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
-Running mission #24
+Running mission #21
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
+Reward: + 45.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 554.8999999999999
-Player life:  18.0
+Episode Reward: 549.9999999999999
+Player life:  13.0
 Zombie kill score:  60
 =========================================
 
@@ -659,6 +581,87 @@ Not enough available Minecraft instances running.
 Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
 Waiting for the mission to start . . . . . .
+Mission has started.
+Running mission #22
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 517.4999999999999
+Player life:  11.0
+Zombie kill score:  63
+=========================================
+
+Calling startMission for role 0
+startMission called okay.
+Waiting for the mission to start . . . . .
+Mission has started.
+Running mission #23
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 493.19999999999993
+Player life:  8.0
+Zombie kill score:  66
+=========================================
+
+Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
+startMission called okay.
+Waiting for the mission to start . . . . . .
+Mission has started.
+Running mission #24
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 554.5999999999999
+Player life:  11.0
+Zombie kill score:  69
+=========================================
+
+Calling startMission for role 0
+startMission called okay.
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #25
 Reward: + 30.0
@@ -677,14 +680,16 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 555.0999999999999
+Episode Reward: 553.9999999999999
 Player life:  18.0
-Zombie kill score:  63
+Zombie kill score:  72
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
-Waiting for the mission to start . . . . . . .
+Waiting for the mission to start . . . . . .
 Mission has started.
 Running mission #26
 Reward: + 30.0
@@ -692,21 +697,21 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: + 30.0
 Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 585.3
-Player life:  18.0
-Zombie kill score:  66
+Episode Reward: 549.2999999999998
+Player life:  12.0
+Zombie kill score:  75
 =========================================
 
 Calling startMission for role 0
@@ -721,11 +726,31 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: +100
+Reward: -100
+
+Agent Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 56.30000000000038
+Player life:  0.0
+Zombie kill score:  76
+=========================================
+
+Calling startMission for role 0
+startMission called okay.
+Waiting for the mission to start . . . . . .
+Mission has started.
+Running mission #28
+Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
+Reward: + 30.0
+Reward: + 30.0
 Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -733,62 +758,44 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 555.1
-Player life:  12.0
-Zombie kill score:  69
+Episode Reward: 507.69999999999993
+Player life:  9.0
+Zombie kill score:  79
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
 Waiting for the mission to start . . . . . . .
-Mission has started.
-Running mission #28
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 103.60000000000005
-Player life:  0.0
-Zombie kill score:  70
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . .
 Mission has started.
 Running mission #29
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: +100
-Reward: -100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 258.09999999999866
-Player life:  0.0
-Zombie kill score:  72
+Episode Reward: 568.1999999999999
+Player life:  8.0
+Zombie kill score:  82
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #30
 Reward: + 30.0
@@ -796,8 +803,8 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
 Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -807,14 +814,14 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 533.5
-Player life:  14.0
-Zombie kill score:  75
+Episode Reward: 510.1
+Player life:  9.0
+Zombie kill score:  85
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . .
+Waiting for the mission to start . . . . . .
 Mission has started.
 Running mission #31
 Reward: + 30.0
@@ -826,20 +833,21 @@ Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 224.19999999999607
-Player life:  0.0
-Zombie kill score:  77
+Episode Reward: 523.0999999999999
+Player life:  12.0
+Zombie kill score:  88
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #32
 Reward: + 30.0
@@ -847,7 +855,6 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
@@ -860,44 +867,25 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 563.3999999999997
-Player life:  7.0
-Zombie kill score:  80
+Episode Reward: 558.7999999999998
+Player life:  13.0
+Zombie kill score:  91
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #33
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: -74.0000000000001
-Player life:  0.0
-Zombie kill score:  80
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . .
-Mission has started.
-Running mission #34
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -905,14 +893,42 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 528.7999999999998
-Player life:  13.0
-Zombie kill score:  83
+Episode Reward: 555.2999999999998
+Player life:  18.0
+Zombie kill score:  94
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . .
+Waiting for the mission to start . . . . . . .
+Mission has started.
+Running mission #34
+Reward: + 45.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 558.2999999999998
+Player life:  16.0
+Zombie kill score:  97
+=========================================
+
+Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
+startMission called okay.
+Waiting for the mission to start . . . . . .
 Mission has started.
 Running mission #35
 Reward: + 30.0
@@ -920,23 +936,20 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 546.7999999999963
-Player life:  1.0
-Zombie kill score:  86
+Episode Reward: 515.6999999999998
+Player life:  11.0
+Zombie kill score:  100
 =========================================
 
 Calling startMission for role 0
@@ -950,24 +963,24 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
+Reward: +100
 Reward: +100
 Reward: + 30.0
-Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 565.2999999999998
-Player life:  20
-Zombie kill score:  89
+Episode Reward: 528.0999999999999
+Player life:  12.0
+Zombie kill score:  103
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #37
 Reward: + 30.0
@@ -977,50 +990,28 @@ Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
 Reward: +100
-Reward: + 30.0
-Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 563.5999999999998
-Player life:  20
-Zombie kill score:  92
+Episode Reward: 513.0
+Player life:  10.0
+Zombie kill score:  106
 =========================================
 
 Calling startMission for role 0
 Not enough available Minecraft instances running.
 Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . . .
 Mission has started.
 Running mission #38
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 156.89999999999554
-Player life:  0.0
-Zombie kill score:  94
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . .
-Mission has started.
-Running mission #39
+Reward: + 45.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
@@ -1028,9 +1019,8 @@ Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -1038,40 +1028,18 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 535.4999999999999
-Player life:  8.0
-Zombie kill score:  97
+Episode Reward: 598.4999999999999
+Player life:  18.0
+Zombie kill score:  109
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
-Waiting for the mission to start . . . . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
-Running mission #40
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 176.09999999999758
-Player life:  0.0
-Zombie kill score:  99
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . .
-Mission has started.
-Running mission #41
-Reward: + 30.0
+Running mission #39
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 45.0
@@ -1080,20 +1048,78 @@ Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 236.59999999999604
-Player life:  0.0
-Zombie kill score:  101
+Episode Reward: 608.2999999999998
+Player life:  14.0
+Zombie kill score:  112
+=========================================
+
+Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
+startMission called okay.
+Waiting for the mission to start . . . . . .
+Mission has started.
+Running mission #40
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 519.6999999999999
+Player life:  12.0
+Zombie kill score:  115
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
+Mission has started.
+Running mission #41
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 518.9
+Player life:  10.0
+Zombie kill score:  118
+=========================================
+
+Calling startMission for role 0
+startMission called okay.
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #42
 Reward: + 30.0
@@ -1102,55 +1128,144 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 259.49999999999795
-Player life:  0.0
-Zombie kill score:  103
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . .
-Mission has started.
-Running mission #43
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 217.3999999999985
-Player life:  0.0
-Zombie kill score:  105
+Episode Reward: 534.0999999999999
+Player life:  13.0
+Zombie kill score:  121
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
 Waiting for the mission to start . . . . . . .
 Mission has started.
-Running mission #44
+Running mission #43
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 549.9999999999999
+Player life:  4.0
+Zombie kill score:  124
+=========================================
+
+Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
+startMission called okay.
+Waiting for the mission to start . . . . . .
+Mission has started.
+Running mission #44
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 548.5999999999999
+Player life:  12.0
+Zombie kill score:  127
+=========================================
+
+Calling startMission for role 0
+startMission called okay.
+Waiting for the mission to start . . . . . . .
+Mission has started.
+Running mission #45
+Reward: + 45.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 522.9999999999999
+Player life:  15.0
+Zombie kill score:  130
+=========================================
+
+Calling startMission for role 0
+startMission called okay.
+Waiting for the mission to start . . . . .
+Mission has started.
+Running mission #46
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 564.4999999999999
+Player life:  14.0
+Zombie kill score:  133
+=========================================
+
+Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
+startMission called okay.
+Waiting for the mission to start . . . . . .
+Mission has started.
+Running mission #47
+Reward: + 30.0
+Reward: + 45.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -1162,9 +1277,9 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 554.0999999999999
-Player life:  17.0
-Zombie kill score:  108
+Episode Reward: 633.3999999999999
+Player life:  19.0
+Zombie kill score:  136
 =========================================
 
 Calling startMission for role 0
@@ -1173,120 +1288,57 @@ Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
 Waiting for the mission to start . . . . . .
 Mission has started.
-Running mission #45
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: +100
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 225.99999999999818
-Player life:  0.0
-Zombie kill score:  110
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . . . . .
-Mission has started.
-Running mission #46
-Reward: + 30.0
-Reward: + 30.0
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: -131.10000000000005
-Player life:  0.0
-Zombie kill score:  110
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . .
-Mission has started.
-Running mission #47
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 252.59999999999604
-Player life:  0.0
-Zombie kill score:  112
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . .
-Mission has started.
 Running mission #48
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
-Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: + 45.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 194.3999999999977
-Player life:  0.0
-Zombie kill score:  114
+Episode Reward: 552.6999999999999
+Player life:  15.0
+Zombie kill score:  139
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #49
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 216.69999999999607
-Player life:  0.0
-Zombie kill score:  116
+Episode Reward: 533.7999999999997
+Player life:  14.0
+Zombie kill score:  142
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
 Waiting for the mission to start . . . . . .
 Mission has started.
@@ -1295,82 +1347,86 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 166.29999999999745
-Player life:  0.0
-Zombie kill score:  118
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . .
-Mission has started.
-Running mission #51
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 245.69999999999823
-Player life:  0.0
-Zombie kill score:  120
+Episode Reward: 509.0
+Player life:  8.0
+Zombie kill score:  145
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
 Waiting for the mission to start . . . . . . .
 Mission has started.
+Running mission #51
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 528.3
+Player life:  12.0
+Zombie kill score:  148
+=========================================
+
+Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
+startMission called okay.
+Waiting for the mission to start . . . . . .
+Mission has started.
 Running mission #52
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 281.0999999999999
-Player life:  0.0
-Zombie kill score:  122
+Episode Reward: 497.4
+Player life:  7.0
+Zombie kill score:  151
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #53
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
-Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: -100
@@ -1378,9 +1434,9 @@ Reward: -100
 Agent Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 190.29999999999916
+Episode Reward: 51.80000000000058
 Player life:  0.0
-Zombie kill score:  124
+Zombie kill score:  152
 =========================================
 
 Calling startMission for role 0
@@ -1391,48 +1447,55 @@ Running mission #54
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 206.19999999999845
-Player life:  0.0
-Zombie kill score:  126
+Episode Reward: 507.39999999999986
+Player life:  9.0
+Zombie kill score:  155
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
-Waiting for the mission to start . . . . . . .
+Waiting for the mission to start . . . . . .
 Mission has started.
 Running mission #55
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 244.99999999999943
-Player life:  0.0
-Zombie kill score:  128
+Episode Reward: 528.3999999999999
+Player life:  14.0
+Zombie kill score:  158
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
 Waiting for the mission to start . . . . . .
 Mission has started.
@@ -1443,35 +1506,7 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 45.0
 Reward: +100
-Reward: +100
-Reward: + 30.0
-Reward: +100
-
-All Zombies Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 529.2999999999998
-Player life:  9.0
-Zombie kill score:  131
-=========================================
-
-Calling startMission for role 0
-Not enough available Minecraft instances running.
-Will wait in case they are starting up. 4 attempts left.
-startMission called okay.
-Waiting for the mission to start . . . . . . . .
-Mission has started.
-Running mission #57
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -1481,9 +1516,9 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 556.1999999999999
-Player life:  18.0
-Zombie kill score:  134
+Episode Reward: 521.9
+Player life:  12.0
+Zombie kill score:  161
 =========================================
 
 Calling startMission for role 0
@@ -1492,25 +1527,52 @@ Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
 Waiting for the mission to start . . . . . .
 Mission has started.
+Running mission #57
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 517.0999999999999
+Player life:  11.0
+Zombie kill score:  164
+=========================================
+
+Calling startMission for role 0
+startMission called okay.
+Waiting for the mission to start . . . . . . .
+Mission has started.
 Running mission #58
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 45.0
-Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 240.49999999999693
-Player life:  0.0
-Zombie kill score:  136
+Episode Reward: 536.9
+Player life:  15.0
+Zombie kill score:  167
 =========================================
 
 Calling startMission for role 0
@@ -1522,21 +1584,21 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 45.0
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: + 30.0
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 277.4999999999974
-Player life:  0.0
-Zombie kill score:  138
+Episode Reward: 519.8
+Player life:  11.0
+Zombie kill score:  170
 =========================================
 
 Calling startMission for role 0
@@ -1549,17 +1611,26 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 36.09999999999994
-Player life:  0.0
-Zombie kill score:  139
+Episode Reward: 565.3999999999999
+Player life:  11.0
+Zombie kill score:  173
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
 Waiting for the mission to start . . . . . .
 Mission has started.
@@ -1571,21 +1642,23 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: -100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 215.0999999999989
-Player life:  0.0
-Zombie kill score:  141
+Episode Reward: 526.5999999999999
+Player life:  11.0
+Zombie kill score:  176
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #62
 Reward: + 30.0
@@ -1597,24 +1670,21 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
 Reward: +100
-Reward: + 45.0
+Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 574.4
-Player life:  13.0
-Zombie kill score:  144
+Episode Reward: 521.0999999999998
+Player life:  12.0
+Zombie kill score:  179
 =========================================
 
 Calling startMission for role 0
-Not enough available Minecraft instances running.
-Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
-Waiting for the mission to start . . . . . . .
+Waiting for the mission to start . . . . . . . .
 Mission has started.
 Running mission #63
 Reward: + 30.0
@@ -1625,42 +1695,37 @@ Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 191.99999999999727
-Player life:  0.0
-Zombie kill score:  146
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . .
-Mission has started.
-Running mission #64
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 45.0
-Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 567.2999999999997
+Episode Reward: 528.4
 Player life:  12.0
-Zombie kill score:  149
+Zombie kill score:  182
+=========================================
+
+Calling startMission for role 0
+startMission called okay.
+Waiting for the mission to start . . . . .
+Mission has started.
+Running mission #64
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: -100
+
+Agent Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 9.900000000000347
+Player life:  0.0
+Zombie kill score:  183
 =========================================
 
 Calling startMission for role 0
@@ -1672,38 +1737,57 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
+Reward: +100
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 593.3999999999999
-Player life:  20
-Zombie kill score:  152
+Episode Reward: 506.4000000000001
+Player life:  8.0
+Zombie kill score:  186
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . . . .
 Mission has started.
 Running mission #66
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
+Reward: + 30.0
+Reward: -100
+
+Agent Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: -43.30000000000009
+Player life:  0.0
+Zombie kill score:  186
+=========================================
+
+Calling startMission for role 0
+startMission called okay.
+Waiting for the mission to start . . . . . .
+Mission has started.
+Running mission #67
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -1711,60 +1795,42 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 564.4
-Player life:  20
-Zombie kill score:  155
+Episode Reward: 523.9999999999999
+Player life:  12.0
+Zombie kill score:  189
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
-Waiting for the mission to start . . . . .
-Mission has started.
-Running mission #67
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: +100
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 184.99999999999767
-Player life:  0.0
-Zombie kill score:  157
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . . . .
 Mission has started.
 Running mission #68
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: -100
+Reward: +100
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 67.00000000000071
-Player life:  0.0
-Zombie kill score:  158
+Episode Reward: 502.5
+Player life:  10.0
+Zombie kill score:  192
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #69
 Reward: + 30.0
@@ -1772,35 +1838,10 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 213.1999999999989
-Player life:  0.0
-Zombie kill score:  160
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . .
-Mission has started.
-Running mission #70
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: +100
-Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -1808,12 +1849,40 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 537.1999999999996
-Player life:  8.0
-Zombie kill score:  163
+Episode Reward: 472.8000000000002
+Player life:  3.0
+Zombie kill score:  195
 =========================================
 
 Calling startMission for role 0
+startMission called okay.
+Waiting for the mission to start . . . . . . .
+Mission has started.
+Running mission #70
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 519.0999999999999
+Player life:  10.0
+Zombie kill score:  198
+=========================================
+
+Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
 Waiting for the mission to start . . . . . .
 Mission has started.
@@ -1826,54 +1895,58 @@ Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 177.69999999999413
-Player life:  0.0
-Zombie kill score:  165
+Episode Reward: 533.1999999999999
+Player life:  14.0
+Zombie kill score:  201
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #72
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 568.8999999999999
-Player life:  15.0
-Zombie kill score:  168
+Episode Reward: 516.1999999999998
+Player life:  10.0
+Zombie kill score:  204
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
-Waiting for the mission to start . . . . . . . . . .
+Waiting for the mission to start . . . . . .
 Mission has started.
 Running mission #73
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
 Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -1885,9 +1958,9 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 543.0999999999997
-Player life:  16.0
-Zombie kill score:  171
+Episode Reward: 547.6999999999999
+Player life:  10.0
+Zombie kill score:  207
 =========================================
 
 Calling startMission for role 0
@@ -1906,16 +1979,16 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
+Reward: +100
 Reward: + 30.0
 Reward: +100
-Reward: -100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 282.6999999999997
-Player life:  0.0
-Zombie kill score:  173
+Episode Reward: 530.5999999999999
+Player life:  12.0
+Zombie kill score:  210
 =========================================
 
 Calling startMission for role 0
@@ -1930,23 +2003,23 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
 Reward: +100
-Reward: + 30.0
-Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 512.8999999999997
-Player life:  10.0
-Zombie kill score:  176
+Episode Reward: 528.4
+Player life:  12.0
+Zombie kill score:  213
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . .
+Waiting for the mission to start . . . . .
 Mission has started.
 Running mission #76
 Reward: + 30.0
@@ -1954,10 +2027,11 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
+Reward: + 30.0
+Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: + 30.0
+Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -1965,19 +2039,23 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 564.9999999999998
-Player life:  20
-Zombie kill score:  179
+Episode Reward: 555.3
+Player life:  12.0
+Zombie kill score:  216
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
-Waiting for the mission to start . . . . . . . .
+Waiting for the mission to start . . . . . .
 Mission has started.
 Running mission #77
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
@@ -1985,23 +2063,25 @@ Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: +100
-Reward: -100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 241.8999999999986
-Player life:  0.0
-Zombie kill score:  181
+Episode Reward: 524.0999999999999
+Player life:  12.0
+Zombie kill score:  219
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
 Waiting for the mission to start . . . . . .
 Mission has started.
 Running mission #78
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 45.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
@@ -2009,14 +2089,15 @@ Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: + 30.0
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 210.699999999998
-Player life:  0.0
-Zombie kill score:  183
+Episode Reward: 543.9
+Player life:  12.0
+Zombie kill score:  222
 =========================================
 
 Calling startMission for role 0
@@ -2025,28 +2106,34 @@ Waiting for the mission to start . . . . . .
 Mission has started.
 Running mission #79
 Reward: + 30.0
-Reward: -100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: -172.7000000000001
-Player life:  0.0
-Zombie kill score:  183
+Episode Reward: 532.8
+Player life:  13.0
+Zombie kill score:  225
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #80
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -2055,41 +2142,16 @@ Reward: -100
 Agent Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 250.29999999999973
+Episode Reward: 43.300000000000296
 Player life:  0.0
-Zombie kill score:  185
-=========================================
-
-Calling startMission for role 0
-startMission called okay.
-Waiting for the mission to start . . . . . . . . .
-Mission has started.
-Running mission #81
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: -100
-
-Agent Died
-Waiting for mission to end  .
-=========================================
-Episode Reward: 222.09999999999616
-Player life:  0.0
-Zombie kill score:  187
+Zombie kill score:  226
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
 Waiting for the mission to start . . . . . .
 Mission has started.
-Running mission #82
+Running mission #81
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
@@ -2106,14 +2168,43 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 498.5999999999997
-Player life:  7.0
-Zombie kill score:  190
+Episode Reward: 522.6999999999999
+Player life:  12.0
+Zombie kill score:  229
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . . . .
+Waiting for the mission to start . . . . . . . .
+Mission has started.
+Running mission #82
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+
+All Zombies Died
+Waiting for mission to end  .
+=========================================
+Episode Reward: 574.9999999999999
+Player life:  16.0
+Zombie kill score:  232
+=========================================
+
+Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
+startMission called okay.
+Waiting for the mission to start . . . . . .
 Mission has started.
 Running mission #83
 Reward: + 30.0
@@ -2121,21 +2212,20 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 564.1999999999998
-Player life:  14.0
-Zombie kill score:  193
+Episode Reward: 527.4
+Player life:  13.0
+Zombie kill score:  235
 =========================================
 
 Calling startMission for role 0
@@ -2147,51 +2237,43 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
-Reward: + 30.0
 Reward: +100
-Reward: -100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 263.299999999998
-Player life:  0.0
-Zombie kill score:  195
+Episode Reward: 529.1999999999999
+Player life:  13.0
+Zombie kill score:  238
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
-Waiting for the mission to start . . . . . . . .
+Waiting for the mission to start . . . . . .
 Mission has started.
 Running mission #85
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
 Reward: -100
 
 Agent Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 224.99999999999807
+Episode Reward: -154.4
 Player life:  0.0
-Zombie kill score:  197
+Zombie kill score:  238
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #86
 Reward: + 30.0
@@ -2203,66 +2285,73 @@ Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 221.69999999999618
-Player life:  0.0
-Zombie kill score:  199
+Episode Reward: 514.6
+Player life:  10.0
+Zombie kill score:  241
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #87
+Reward: + 45.0
+Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
+Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: -100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 153.49999999999534
-Player life:  0.0
-Zombie kill score:  201
+Episode Reward: 537.0999999999999
+Player life:  14.0
+Zombie kill score:  244
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #88
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: +100
+Reward: + 30.0
+Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
-Reward: + 30.0
-Reward: -100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 218.49999999999648
-Player life:  0.0
-Zombie kill score:  203
+Episode Reward: 518.7999999999998
+Player life:  10.0
+Zombie kill score:  247
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
 Waiting for the mission to start . . . . . .
 Mission has started.
@@ -2274,31 +2363,31 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
-Reward: -100
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 217.69999999999618
-Player life:  0.0
-Zombie kill score:  205
+Episode Reward: 522.7999999999998
+Player life:  12.0
+Zombie kill score:  250
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #90
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
 Reward: +100
-Reward: + 30.0
-Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
@@ -2309,9 +2398,9 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 563.6999999999999
-Player life:  14.0
-Zombie kill score:  208
+Episode Reward: 549.3
+Player life:  16.0
+Zombie kill score:  253
 =========================================
 
 Calling startMission for role 0
@@ -2321,25 +2410,25 @@ startMission called okay.
 Waiting for the mission to start . . . . . .
 Mission has started.
 Running mission #91
+Reward: + 45.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 529.0999999999999
-Player life:  13.0
-Zombie kill score:  211
+Episode Reward: 528.4
+Player life:  8.0
+Zombie kill score:  256
 =========================================
 
 Calling startMission for role 0
@@ -2347,7 +2436,7 @@ startMission called okay.
 Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #92
-Reward: + 30.0
+Reward: + 45.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
@@ -2355,17 +2444,17 @@ Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
 Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 563.9999999999998
-Player life:  20
-Zombie kill score:  214
+Episode Reward: 533.4999999999999
+Player life:  11.0
+Zombie kill score:  259
 =========================================
 
 Calling startMission for role 0
@@ -2378,8 +2467,8 @@ Running mission #93
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
 Reward: +100
+Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
@@ -2392,9 +2481,9 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 584.2999999999997
-Player life:  18.0
-Zombie kill score:  217
+Episode Reward: 553.8
+Player life:  11.0
+Zombie kill score:  262
 =========================================
 
 Calling startMission for role 0
@@ -2402,30 +2491,17 @@ startMission called okay.
 Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #94
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
-Reward: +100
-Reward: + 30.0
-Reward: + 30.0
-Reward: +100
+Reward: -100
 
-All Zombies Died
+Agent Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 564.8999999999999
-Player life:  20
-Zombie kill score:  220
+Episode Reward: -202.79999999999976
+Player life:  0.0
+Zombie kill score:  262
 =========================================
 
 Calling startMission for role 0
-Not enough available Minecraft instances running.
-Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
 Waiting for the mission to start . . . . . .
 Mission has started.
@@ -2434,11 +2510,11 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
-Reward: +100
 Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
@@ -2446,35 +2522,37 @@ Reward: +100
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 543.4999999999999
-Player life:  16.0
-Zombie kill score:  223
+Episode Reward: 525.0999999999999
+Player life:  12.0
+Zombie kill score:  265
 =========================================
 
 Calling startMission for role 0
+Not enough available Minecraft instances running.
+Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
-Waiting for the mission to start . . . . . . .
+Waiting for the mission to start . . . . . .
 Mission has started.
 Running mission #96
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 45.0
 Reward: + 30.0
-Reward: + 30.0
+Reward: +100
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
+Reward: + 45.0
 Reward: +100
-Reward: -100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 239.99999999999443
-Player life:  0.0
-Zombie kill score:  225
+Episode Reward: 542.5999999999999
+Player life:  12.0
+Zombie kill score:  268
 =========================================
 
 Calling startMission for role 0
@@ -2486,41 +2564,48 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
 Reward: +100
-Reward: -100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 264.8999999999984
-Player life:  0.0
-Zombie kill score:  227
+Episode Reward: 558.2999999999996
+Player life:  13.0
+Zombie kill score:  271
 =========================================
 
 Calling startMission for role 0
 startMission called okay.
-Waiting for the mission to start . . . . . . . . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #98
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
 Reward: +100
-Reward: -100
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
+Reward: +100
+Reward: +100
 
-Agent Died
+All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 14.70000000000013
-Player life:  0.0
-Zombie kill score:  228
+Episode Reward: 528.3
+Player life:  13.0
+Zombie kill score:  274
 =========================================
 
 Calling startMission for role 0
@@ -2536,42 +2621,40 @@ Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
+Reward: + 30.0
+Reward: + 30.0
 Reward: +100
-Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 
 All Zombies Died
 Waiting for mission to end  .
 =========================================
-Episode Reward: 524.1999999999997
-Player life:  12.0
-Zombie kill score:  231
+Episode Reward: 535.5
+Player life:  14.0
+Zombie kill score:  277
 =========================================
 
 Calling startMission for role 0
-Not enough available Minecraft instances running.
-Will wait in case they are starting up. 4 attempts left.
 startMission called okay.
-Waiting for the mission to start . . . . . .
+Waiting for the mission to start . . . . . . .
 Mission has started.
 Running mission #100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: + 30.0
 Reward: +100
 Reward: + 30.0
 Reward: + 30.0
 Reward: + 30.0
-Reward: +100
 Reward: + 30.0
+Reward: + 30.0
+Reward: +100
 Reward: + 30.0
 Reward: +100
 Complete
-Wins:  47 % | Zombies Killed:  77.0 %
-mean:  350.60797
-mean:  2.31
-mean:  6.67
+Wins:  92 % | Zombies Killed:  92.33333333333333 %
+mean:  480.88898
+mean:  2.77
+mean:  10.89
 
 Process finished with exit code 0
