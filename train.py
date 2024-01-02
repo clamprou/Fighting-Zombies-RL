@@ -7,7 +7,7 @@ print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 print("Hyper Parameters:\nBATCH_SIZE: " + str(BATCH_SIZE) +"\nGAMMA: "+ str(GAMMA) +"\nEPS_START: "+ str(EPS_START)
       +"\nEPS_END: "+ str(EPS_END) +"\nEPS_DECAY: "+ str(EPS_DECAY) +"\nTAU: "+ str(TAU) +"\nLR: "+ str(LR))
 
-NUM_EPISODES = 2000
+NUM_EPISODES = 5000
 env = FightingZombiesDisc()
 
 for episode in range(NUM_EPISODES):
@@ -17,7 +17,7 @@ for episode in range(NUM_EPISODES):
     state = torch.tensor(state, dtype=torch.float32, device=device).unsqueeze(0)
     while not done:
         action = select_action(state)
-        observation, reward, done = env.step(action.item())
+        observation, reward, done, _ = env.step(action.item())
         reward = torch.tensor([reward], device=device)
         next_state = torch.tensor(observation, dtype=torch.float32, device=device).unsqueeze(0)
         memory.push(state, action, next_state, reward)
