@@ -11,7 +11,7 @@ The scenario in which the agent is trained involves combating zombies in Minecra
 inside, the agent is equipped with iron armor and a diamond sword. Its objective is to learn appropriate actions 
 (such as moving left, moving right, attacking, etc.) to survive against the zombies.
 
-![Scenario.png](MyResults%2FScenario.png "Scenario")
+![DQN-GIF.gif](MyResults%2FDQN-GIF.gif)
 
 ## Rewards
 * Damage zombie: **+ 30**
@@ -39,5 +39,3 @@ Following training, the agent demonstrates acceptable performance against the zo
 * **10.89** average life (with 20 being the maximum)
 
 ![Results.png](MyResults%2FResults.png "Results")
-
-![DQN-GIF.gif](MyResults%2FDQN-GIF.gif)
