@@ -40,3 +40,4 @@ Following training, the agent demonstrates acceptable performance against the zo
 
 ![Results.png](MyResults%2FResults.png "Results")
 
+![DQN-GIF.gif](MyResults%2FDQN-GIF.gif)
