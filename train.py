@@ -1,5 +1,8 @@
 from __future__ import print_function
 from __future__ import division
+
+from datetime import datetime
+
 from malmo_agent import *
 from ai import *
 from gym_env import FightingZombiesDisc
@@ -7,7 +10,7 @@ print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 print("Hyper Parameters:\nBATCH_SIZE: " + str(BATCH_SIZE) +"\nGAMMA: "+ str(GAMMA) +"\nEPS_START: "+ str(EPS_START)
       +"\nEPS_END: "+ str(EPS_END) +"\nEPS_DECAY: "+ str(EPS_DECAY) +"\nTAU: "+ str(TAU) +"\nLR: "+ str(LR))
 
-NUM_EPISODES = 5000
+NUM_EPISODES = 2000
 env = FightingZombiesDisc()
 
 for episode in range(NUM_EPISODES):

@@ -25,7 +25,6 @@ Transition = namedtuple('Transition',
 
 def save_model():
     torch.save(policy_net.state_dict(), "policy.pt")
-    torch.save(target_net.state_dict(), "target.pt")
 
 def load_model():
     policy_net.load_state_dict(torch.load("policy.pt"))
