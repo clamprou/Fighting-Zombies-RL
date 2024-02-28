@@ -11,7 +11,7 @@ able to learn and find strategies to win against the zombies in the Minecraft ga
 3 zombies inside it and equipped with an iron armor and a diamond sword, agent should learn what actions to perform 
 (move left, move right, attack, ...) in order to survive against the zombies.
 
-![unnamed.png](..%2F..%2F..%2Funnamed.png "Arena")
+![Scenario.png](MyResults%2FScenario.png "Scenario")
 
 ## Rewards
 * Damage zombie: **+ 30**
@@ -26,7 +26,7 @@ which provides several abstractions and easy design. The basic idea behind the D
 to approximate the Q function, which estimates the expected cumulative rewards for taking specific actions in a given state. 
 For the design of this algorithm, an implementation [example of the DQN algorithm by Pytorch](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html) in the gym Cart Pole environment was leveraged. You can find more information at this link.
 
-![Screenshot 2024-02-28 225643.png](..%2F..%2F..%2FScreenshot%202024-02-28%20225643.png)
+![DQN.png](MyResults%2FDQN.png "DQN")
 
 ## Installation
 * Malmo library: Easiest way is to [install Marlo using Anaconda](https://marlo.readthedocs.io/en/latest/installation.html) (it will install Malmo too)
@@ -42,5 +42,5 @@ After training, the agent is able to establish good performance against the zomb
 * **92%** win rate
 * **10.89** average life (20 is the max)
 
-![Screenshot 2024-02-28 230205.png](..%2F..%2F..%2FScreenshot%202024-02-28%20230205.png)
+![Results.png](MyResults%2FResults.png "Results")
 
