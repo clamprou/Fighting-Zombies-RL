@@ -1,15 +1,15 @@
 # Reinforcement Learning DQN - Fight Zombies in Minecraft
 
-This project is writen in Python using the [Malmo](https://github.com/microsoft/malmo/tree/master) platform, to create the 
-reinforcement learning scenario of fighting zombies in Minecraft. Also, this project uses the Pytorch library for the
-implementation of the DQN algorithm. The main idea, is to find out if the state of the art DQN algorithm is
-able to learn and find strategies to win against the zombies in the Minecraft game.
+This project is written in Python using the [Malmo](https://github.com/microsoft/malmo/tree/master) platform to create 
+a reinforcement learning scenario of fighting zombies in Minecraft. Additionally, this project employs the PyTorch library 
+for implementing the DQN algorithm. The primary goal is to determine whether the state-of-the-art DQN algorithm can learn 
+and devise strategies to defeat zombies in the Minecraft game.
 
 ## Training Scenario
-Τhe scenario in which the agent is trained is fighting against zombies in Minecraft, which was designed using the 
-[Malmo](https://github.com/microsoft/malmo/tree/master) platform. Spawned in a 20x20 close arena with 
-3 zombies inside it and equipped with an iron armor and a diamond sword, agent should learn what actions to perform 
-(move left, move right, attack, ...) in order to survive against the zombies.
+The scenario in which the agent is trained involves combating zombies in Minecraft, designed using the 
+[Malmo](https://github.com/microsoft/malmo/tree/master) platform. Spawned in a 20x20 enclosed arena with three zombies 
+inside, the agent is equipped with iron armor and a diamond sword. Its objective is to learn appropriate actions 
+(such as moving left, moving right, attacking, etc.) to survive against the zombies.
 
 ![Scenario.png](MyResults%2FScenario.png "Scenario")
 
@@ -21,26 +21,22 @@ able to learn and find strategies to win against the zombies in the Minecraft ga
 * Every step: **- 0.1**
 
 ## DQN Algorithm
-The implementation of the DQN model utilized the [Pytorch](https://pytorch.org/) library (using the Python language), 
-which provides several abstractions and easy design. The basic idea behind the DQN algorithm is managing a neural network 
-to approximate the Q function, which estimates the expected cumulative rewards for taking specific actions in a given state. 
-For the design of this algorithm, an implementation [example of the DQN algorithm by Pytorch](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html) in the gym Cart Pole environment was leveraged. You can find more information at this link.
+The implementation of the DQN model utilized the [PyTorch](https://pytorch.org/) library, which provides several abstractions and facilitates easy design. The fundamental concept behind the DQN algorithm involves managing a neural network to approximate the Q function, estimating the expected cumulative rewards for specific actions in a given state. For the design of this algorithm, an implementation example of the DQN algorithm by PyTorch in the gym Cart Pole environment was referenced. More information can be found at [this link](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html). Below is a representation of the designed DQN architecture model and the fine-tuned hyperparameters.
 
 ![DQN.png](MyResults%2FDQN.png "DQN")
 
 ## Installation
-* Malmo library: Easiest way is to [install Marlo using Anaconda](https://marlo.readthedocs.io/en/latest/installation.html) (it will install Malmo too)
-* Python 3.7.12
-* Pytorch 1.13.0
+* Install the Malmo library. The easiest method is to [install Marlo using Anaconda](https://marlo.readthedocs.io/en/latest/installation.html) (which includes Malmo).
+* Ensure you have Python 3.7.12 installed.
+* Install PyTorch version 1.13.0.
 
 ## Execution
-In order to start the training of the DQN model in the above scenario you only have to execute the `train.py`. After, 
-the training you can execute the `play.py` to evaluate the so far learned policy of the agent.
+To commence training the DQN model in the provided scenario, simply execute `train.py`. After training, evaluate the learned policy of the agent by executing `play.py`.
 
 ## Results
-After training, the agent is able to establish good performance against the zombies with:
+Following training, the agent demonstrates acceptable performance against the zombies, achieving:
 * **92%** win rate
-* **10.89** average life (20 is the max)
+* **10.89** average life (with 20 being the maximum)
 
 ![Results.png](MyResults%2FResults.png "Results")
 
